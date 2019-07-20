@@ -4,8 +4,8 @@
 using namespace std;
 
 
-// returns ap summation of n
-unsigned long int s(unsigned long int n){
+// returns degree 1 ap summation of n
+unsigned long int faulhaber_1(unsigned long int n){
 	return n*(n+1)/2;
 }
 
@@ -17,7 +17,7 @@ int main(){
 		unsigned long int n;
 		cin>>n;
 		n--;
-		cout<<3*s(n/3)+5*s(n/5)-15*s(n/15)<<endl;
+		cout<<3*faulhaber_1(n/3)+5*faulhaber_1(n/5)-15*faulhaber_1(n/15)<<endl;
 	}
 	return 0;
 }
